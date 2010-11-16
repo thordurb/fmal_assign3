@@ -33,7 +33,7 @@
 (duplicate '(1 2 3 4))
 
 
-
+;1c
 (define (delete list i)
   (COND ((< (length list) i)
          (cons (CAR list) (CDR list)))
