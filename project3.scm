@@ -32,3 +32,5 @@
 
 (duplicate '(1 2 3 4))
 
+;1.d
+(define (comp f g)(lambda(x)(f(g x))))
