@@ -1,3 +1,6 @@
+;fmal Forritnarverkefni 3
+
+;1.a
 (define (lessthan list y)
   (cond
     ((null? list)
@@ -11,13 +14,18 @@
 
 (lessthan '(1 5 3 2 4) 3)
 
+;1.b
 (define (duplicate x)
-  (if(null? list)
-     '()
-     (cons(CAR x)
-          (cons(CAR x)
-               (duplicate(CDR x))
-          )
+  (cond
+     ((null? x)
+      '())
+     (else
+      (cons(car x)
+           (cons(car x)
+                (duplicate(CDR x))
+                )
+           
+           )
      )
   )
 )
