@@ -57,3 +57,5 @@
 
 (define (comp f g)(lambda(x)(f(g x))))
 (map (lambda (x) (* x x)) (duplicate '(1 2 3 4)))
+
+((comp(lambda(x) (map (lambda(y) (* y y)) x))duplicate)'(1 2 3 4))
